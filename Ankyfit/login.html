@@ -1,0 +1,97 @@
+<!--Frontend done-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <form method="post" action="/login">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Log in to AnkyFit and access exclusive features.">
+    <meta name="keywords" content="AnkyFit, Login, Fitness, Gym">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>AnkyFit Login | AnkyFit</title>
+    <style>
+        body {
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('/images/gym.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .box-area {
+            background: rgba(5, 110, 202, 0.7); /* Add background color to improve readability */
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px; /* Set a maximum width for better responsiveness */
+        }
+
+        /* Additional styles if needed */
+    </style>
+</head>
+<body class="main-layout inner_page">
+    <section class="main-content">
+        <div class="container">
+            <article class="box-area">
+                <div class="row align-items-center">
+                    <!-- Header text -->
+                    <div class="header-text mb-4 text-center">
+                        <h2>Welcome Back!</h2>
+                        <p>Log in to continue your fitness journey.</p>
+                    </div>
+                    <!-- Login form -->
+                    <form method="post" action="/login">
+                      <!-- Email input with label -->
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="loginEmail" placeholder="Enter your email address" required>
+                        </div>
+                       <!-- Password input with label -->
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-lg" id="loginPassword" placeholder="Enter your password" required>
+                        </div>
+                        <!-- Show password checkbox -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="showPassword">
+                            <label class="form-check-label" for="showPassword">Show password</label>
+                        </div>
+                        <!-- Remember me checkbox -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <!-- External login options -->
+                        <div class="mb-3">
+                            <button class="btn btn-lg btn-secondary w-100" type="button">Sign in with Google</button>
+                            <button class="btn btn-lg btn-secondary w-100" type="button">Sign in with Facebook</button>
+                        </div>
+                        <!-- Login button -->
+                        <div class="mb-3">
+                            <button class="btn btn-lg btn-primary w-100" type="submit">Login</button>
+                        </div>
+                        <!-- Forgot password link -->
+                        <p class="small mb-5 pb-lg-2"><a class="text-white" href="#!">Forgot password?</a></p>
+                        <!-- Register link -->
+                        <p>Don't have an account? <a href="forget.html" class="link-info">Register here</a></p>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qv76YQI/x+Xu2U/7DkNMEIuZ/5Xq4KG1Zu8InTrqQa+oHcIKI+6u8uqdcDMZmgKb" crossorigin="anonymous"></script>
+</body>
+</html>
